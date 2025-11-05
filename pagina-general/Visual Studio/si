@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+table, th, td {
+  border:2px solid rgb(104, 23, 3);
+  border-collapse: collapse;
+  text-align: center;
+}
+</style>
+
+<h2>Horario</h2>
+<table style="width:120%">
+  <tr>
+    <th> Horas </th>
+    <th> Lunes </th>
+    <th> Martes </th>
+    <th> Miércoles </th>
+    <th> Jueves </th>
+    <th> Viernes </th>
+  </tr>
+
+  <tr>
+    <td> 8:30 - 9:25 </td>
+    <td> SASP </td>
+    <td rowspan="2"> OPT </td>   <!-- OPT dos horas seguidas -->
+    <td rowspan="2"> SOR </td>   <!-- SOR dos horas seguidas -->
+    <td> SER </td>
+    <td rowspan="2"> MME </td>   <!-- MME dos horas seguidas -->
+  </tr>
+
+  <tr>
+    <td> 9:25 - 10:20 </td>
+    <td> SOR </td>
+    <td> DASP </td>
+  </tr>
+
+  <tr>
+    <td> 10:40 - 11:35 </td>
+    <td rowspan="2"> SOR </td>   <!-- SOR dos horas seguidas -->
+    <td rowspan="2"> APW </td>   <!-- APW dos horas seguidas -->
+    <td rowspan="2"> SER </td>   <!-- SER dos horas seguidas -->
+    <td> IPEII </td>
+    <td> SER </td>
+  </tr>
+
+  <tr>
+    <td> 11:35 - 12:30 </td>
+    <td> MME </td>
+    <td> SOR </td>
+  </tr>
+
+  <tr>
+    <td> 12:40 - 13:35 </td>
+    <td rowspan="2"> SER </td>   <!-- SER dos horas seguidas -->
+    <td rowspan="2"> MME </td>   <!-- MME dos horas seguidas -->
+    <td rowspan="2"> MME </td>   <!-- MME dos horas seguidas -->
+    <td> APW </td>
+    <td> OPT </td>
+  </tr>
+
+  <tr>
+    <td> 13:35 - 14:30 </td>
+    <td> PI </td>
+    <td> APW </td>
+  </tr>
+</table>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Horario</title>
+<style>
+table, th, td {
+  border:2px solid rgb(104, 23, 3);
+  border-collapse: collapse;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h2>Horario</h2>
+<table style="width: 550px;height: 200px;">
+  <tr>
+    <th> Horas </th>
+    <th> Lunes </th>
+    <th> Martes </th>
+    <th> Miércoles </th>
+    <th> Jueves </th>
+    <th> Viernes </th>
+  </tr>
+
+  <tr>
+    <td> 8:30 - 9:25 </td>
+    <td> SASP </td>
+    <td> OPT </td>
+    <td> SOR </td>
+    <td> SER </td>
+    <td> MME </td>
+  </tr>
+
+  <tr>
+    <td> 9:25 - 10:20 </td>
+    <td> SOR </td>
+    <td> APW </td>
+    <td> SER </td>
+    <td> DASP </td>
+    <td> MME </td>
+  </tr>
+
+  <tr>
+    <td> 10:20 - 10:40 </td>
+    <td colspan="5"> RECREO </td>
+  </tr>
+
+  <tr>
+    <td> 10:40 - 11:35 </td>
+    <td> SOR </td>
+    <td> APW </td>
+    <td> SER </td>
+    <td> IPEII </td>
+    <td> SER </td>
+  </tr>
+
+  <tr>
+    <td> 11:35 - 12:30 </td>
+    <td> SER </td>
+    <td> MME </td>
+    <td> IPEII </td>
+    <td> OPT </td>
+    <td> SOR </td>
+  </tr>
+
+  <tr>
+    <td> 12:30 - 12:40 </td>
+    <td colspan="5"> RECREO </td>
+  </tr>
+
+  <tr>
+    <td> 12:40 - 13:35 </td>
+    <td> SER </td>
+    <td> MME </td>
+    <td> MME </td>
+    <td> APW </td>
+    <td> OPT </td>
+  </tr>
+
+  <tr>
+    <td> 13:35 - 14:30 </td>
+    <td> IPEII </td>
+    <td> SOR </td>
+    <td> MME </td>
+    <td> PI </td>
+    <td> APW </td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+
+</body>
+</html>
