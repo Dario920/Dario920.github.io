@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina-div</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(196, 196, 196);
+        }
+
+        .bolas-general {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .bolas-general p {
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .arriba-rojo {
+            width: 60vw;
+            height: 15vh;
+            background-color: rgb(230, 98, 98);
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 3px solid rgb(139, 0, 0);
+            border-radius: 10%;
+            justify-content: center;
+        }
+        .bolita-1 {
+            background-color: rgb(63, 255, 140);
+            border: 4px double rgb(0, 100, 0);
+        }
+        .bolita-2 {
+            background-color: rgb(217, 230, 98);
+            border: 4px double rgb(82, 100, 0);
+        }
+        .bolita-3 { 
+            background-color: rgb(98, 147, 230);
+            border: 4px double rgb(0, 0, 139);
+        }
+
+    </style>
+</head>
+<body>
+<div class="arriba-rojo">
+    <marquee><h1>DIV con enlace</h1></marquee>
+</div>
+<div class="bolas-general">
+    <p class="bolita-1">Esta es una bolita verde</p>
+    <p class="bolita-2">Esta es una bolita amarilla</p>
+    <p class="bolita-3">Esta es una bolita azul</p>
+</div>
+</body>
+
+</html>

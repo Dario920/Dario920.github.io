@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Calculadora Avanzada</title>
+<link rel="stylesheet" href="../../css/calc-style.css" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<main class="app" role="main" aria-label="Calculadora avanzada">
+    <header class="app-header">
+    <h1>Calculadora</h1>
+    <div class="controls">
+        <label class="toggle">
+        <input id="modeToggle" type="checkbox" aria-label="Alternar modo científico" />
+        <span> Científica </span>
+        </label>
+        <button id="themeToggle" class="btn small" aria-label="Alternar tema">Tema</button>
+    </div>
+    </header>
+
+    <section class="calculator" aria-labelledby="calculator-heading">
+    <h2 id="calculator-heading" class="visually-hidden">Calculadora</h2>
+
+    <div class="display-area">
+        <div id="memoryIndicator" class="memory-ind hidden" aria-hidden="true">M</div>
+        <div id="expression" class="expression" aria-live="polite"></div>
+        <input id="result" class="result" type="text" inputmode="decimal" aria-label="Resultado" readonly />
+    </div>
+
+    <div class="panel-and-history">
+        <div class="panel">
+        <!-- Row: memory -->
+        <div class="row">
+            <button class="btn func" data-action="MC">MC</button>
+            <button class="btn func" data-action="MR">MR</button>
+            <button class="btn func" data-action="Mplus">M+</button>
+            <button class="btn func" data-action="Mminus">M-</button>
+            <button class="btn func" data-action="clearAll">C</button>
+        </div>
+
+        <!-- Row: advanced functions -->
+        <div class="row scientific-row hidden" data-mode="scientific">
+            <button class="btn sci" data-value="sin(">sin</button>
+            <button class="btn sci" data-value="cos(">cos</button>
+            <button class="btn sci" data-value="tan(">tan</button>
+            <button class="btn sci" data-value="ln(">ln</button>
+            <button class="btn sci" data-value="log10(">log</button>
+        </div>
+
+        <!-- Buttons -->
+        <div class="row">
+            <button class="btn" data-value="(">(</button>
+            <button class="btn" data-value=")">)</button>
+            <button class="btn" data-action="backspace">⌫</button>
+            <button class="btn op" data-value="/">÷</button>
+        </div>
+
+        <div class="row">
+            <button class="btn num" data-value="7">7</button>
+            <button class="btn num" data-value="8">8</button>
+            <button class="btn num" data-value="9">9</button>
+            <button class="btn op" data-value="*">×</button>
+        </div>
+
+        <div class="row">
+            <button class="btn num" data-value="4">4</button>
+            <button class="btn num" data-value="5">5</button>
+            <button class="btn num" data-value="6">6</button>
+            <button class="btn op" data-value="-">−</button>
+        </div>
+
+        <div class="row">
+            <button class="btn num" data-value="1">1</button>
+            <button class="btn num" data-value="2">2</button>
+            <button class="btn num" data-value="3">3</button>
+            <button class="btn op" data-value="+">+</button>
+        </div>
+
+        <div class="row">
+            <button class="btn func" data-action="plusMinus">±</button>
+            <button class="btn num" data-value="0">0</button>
+            <button class="btn" data-value=".">.</button>
+            <button class="btn equal" data-action="equals" aria-label="Calcular">=</button>
+        </div>
+
+        <!-- More scientific -->
+        <div class="row scientific-row hidden" data-mode="scientific">
+            <button class="btn sci" data-value="^">x^y</button>
+            <button class="btn sci" data-action="sqrt">√</button>
+            <button class="btn sci" data-action="factorial">n!</button>
+            <button class="btn sci" data-value="%">%</button>
+        </div>
+        </div>
+
+        <aside class="history">
+        <div class="history-header">
+            <h3>Historial</h3>
+            <button class="btn small" id="clearHistory">Limpiar</button>
+        </div>
+        <ul id="historyList" class="history-list" aria-live="polite"></ul>
+        </aside>
+    </div>
+
+    <footer class="small-note">
+        <small>Soporta entrada por teclado. Usar Enter para calcular. Esc para limpiar. Backspace para borrar último dígito.</small>
+    </footer>
+    </section>
+</main>
+
+<script src="../../js/calc.js"></script>
+</body>
+</html>
