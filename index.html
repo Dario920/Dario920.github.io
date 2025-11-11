@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+        <title>pagina-div</title>
+            <link rel="stylesheet" href="style/style.css">
+            <link rel="stylesheet" href="style/button.css">
+
 <head>
         <div>
             <meta charset="UTF-8">
@@ -28,40 +33,42 @@
                             <meta name="twitter:site" content="@edteamlat"> <!-- Si quieren, se puede quitar -->
                                 <div>
                                     <!-- ✅ SEO estándar -->
-                                    <meta name="description" content="Cursos online para aprender programación, diseño, negocios digitales y más, con educación honesta y accesible para todos.">
+                                    <meta name="description" content="Página web donde podrás ver todo mi progreso a través del HTML y CSS desde el comienzo.">
                                     <meta name="theme-color" content="#4CAF50">
                                 </div>
                         </div>
                 </div>
         </div>
 </head>
-    <title>pagina-div</title>
-        <link rel="stylesheet" href="style/style.css">
-</head>
+
 <body>
     <header>
-        <h1>Ejemplo de DIV en HTML5</h1>
+        <h1>¡Librería de mis proyectos!</h1>
+            <div>
+                <img class="logo" src="img/logo-sin-fondo-2.png" alt="Logo">
+            </div>
     </header>
 
     <nav>
         <ul>
-            <li><a href="tareas/Backrooms/index.html">Backrooms</a></li>
-            <li><a href="tareas/APW/proyecto/index.html">Proyecto</a></li>
-            <li><a href="tareas/div/div.html">Primeros div</a></li>
-            <li><a href="tareas/div/div(bolas).html">Div bolas</a></li>
-            <li><a href="tareas/Visual Studio/mi-primera-web.html">Mi primera WEB</a></li>
-            <li><a href="tareas/Visual Studio/CSS Style.html">Mi primeros estilos</a></li>
-            <li><a href="tareas/formas-mapa/mapa-ubicaciones.html">Mapa sensible</a></li>
-            <li><a href="tareas/head-general/index.html">Head General</a></li>
+            <li><a class="tamaño-letra" href="tareas/Backrooms/index.html">Backrooms</a></li>
+            <li><a class="tamaño-letra" href="tareas/APW/proyecto/index.html">Proyecto</a></li>
+            <li><a class="tamaño-letra" href="tareas/div/div.html">Primeros div</a></li>
+            <li><a class="tamaño-letra" href="tareas/div/div(bolas).html">Div bolas</a></li>
+            <li><a class="tamaño-letra" href="tareas/Visual Studio/mi-primera-web.html">Mi primera WEB</a></li>
+            <li><a class="tamaño-letra" href="tareas/Visual Studio/CSS Style.html">Mi primeros estilos</a></li>
+            <li><a class="tamaño-letra" href="tareas/formas-mapa/mapa-ubicaciones.html">Mapa sensible</a></li>
+            <li><a class="tamaño-letra" href="tareas/head-general/index.html">Head General</a></li>
         </ul>
     </nav>
 
     <div class="layout">
-        <aside>
+        <aside class="aside-left">
             <h2>Menú de enlaces</h2>
             <a class="g-maps" href="https://www.google.com/maps"><p class="sombra">Google Maps</p></a> <br>
+            <a class="g-maps" href="https://rayuela.educarex.es/modulo_acceso/controlador.rayuela"><p class="sombra">Rayuela</p></a> <br>
+            <a class="g-maps" href="https://context.reverso.net/traduccion/espanol-ingles/"><p class="sombra">Traductor</p></a> <br>
             <a class="g-maps" href="https://www.youtube.com"><p class="sombra">YouTube</p></a> <br>
-            <a class="g-maps" href="https://context.reverso.net/traduccion/espanol-ingles/"><p class="sombra">Traductor</p></a>
         </aside>
 
         <main>
@@ -69,15 +76,28 @@
                 <h2 class="titulo-temario">Temario Sistemas Operativos en Red (MariSol)</h2>
             </div>
             <div>
-                <ul>
-                    <li class="temarios-list"><a href="tareas/div/file/U-1-SER.pdf">1. Introducción a los Sistemas Operativos en Red</a> </li>
-                    <li class="temarios-list"><a href="tareas/div/file/U-2-SER.pdf">2. Arquitectura de Redes y Protocolos de Comunicación</a> </li>
-                    <li class="temarios-list"><a href="tareas/div/file/U-3-SER.pdf">3. Servicios de Red y Administración de Sistemas</a> </li>
-                    <li class="temarios-list"><a href="tareas/div/file/U-4-SER.pdf">4. Seguridad en Sistemas Operativos en Red</a> </li>
-                    <li class="temarios-list"><a href="tareas/div/file/U-5-SER.pdf">5. Virtualización y Cloud Computing</a> </li>
-                </ul>
+                <button type="button" onclick="window.location.href='tareas/div/file/U-1-SER.pdf'">
+                    <span>TEMA 1: Introducción a los servicios de red</span>
+                </button>
+                <button type="button" onclick="window.location.href='tareas/div/file/U-2-SER.pdf'">
+                    <span>TEMA 2: Servidor DHCP</span>
+                </button>
+                <button type="button" onclick="window.location.href='tareas/div/file/U-3-SER.pdf'">
+                    <span>TEMA 3: Servidor HTTP</span>
+                </button>
+                <button type="button" onclick="window.location.href='tareas/div/file/U-4-SER.pdf'">
+                    <span>TEMA 4: Servidor DNS</span>
+                </button>
+                <button type="button" onclick="window.location.href='tareas/div/file/U-5-SER.pdf'">
+                    <span>TEMA 5: Servidor FTP</span>
+                </button>
             </div>
         </main>
+
+        <aside class="aside-right">
+            <h2>Otras páginas</h2>
+            <a class="g-maps" href="https://github.com/Dario920"><p class="sombra">Mi GitHub</p></a> <br>
+        </aside>
     </div>
 
     <footer>
