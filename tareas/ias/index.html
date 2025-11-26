@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Web de IA</title>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+
+    <header>
+        <h1>INTELIGENCIA ARTIFICIAL</h1>
+        
+        <div class="header-images">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS3PwERLLNB9XKFpeMgAMPxl5VvN3HRJnXQQ&s" alt="OpenAI Logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJw_dcTPdJvT1x-HciEDfXOC19WlINd9MJCA&s" alt="DeepMind Logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Midjourney_Emblem.svg" alt="Midjourney Logo">
+            <img src="https://huggingface.co/front/assets/huggingface_logo.svg" alt="Hugging Face Logo">
+        </div>
+    </header>
+
+    <nav>
+        <a href="https://openai.com" target="_blank">OpenAI</a>
+        <a href="https://google.com" target="_blank">Google DeepMind</a>
+        <a href="https://midjourney.com" target="_blank">Midjourney</a>
+        <a href="https://huggingface.co" target="_blank">Hugging Face</a>
+    </nav>
+
+    <div class="contenedor">
+        
+        <aside>
+            <h3>Elige una opción:</h3>
+            <button onclick="verIA('chatgpt')">ChatGPT</button>
+            <button onclick="verIA('gemini')">Gemini</button>
+            <button onclick="verIA('claude')">Claude</button>
+            <button onclick="verIA('dalle')">DALL-E</button>
+        </aside>
+
+        <main>
+            <div id="intro" class="caja-info visible">
+                <h2>Bienvenido</h2>
+                <p>Selecciona una IA en el menú de la izquierda para ver su descripción aquí.</p>
+            </div>
+
+            <div id="chatgpt" class="caja-info">
+                <h2>ChatGPT</h2>
+                <p>Es un chat inteligente creado por OpenAI que responde preguntas y escribe textos.</p>
+            </div>
+
+            <div id="gemini" class="caja-info">
+                <h2>Gemini</h2>
+                <p>Es la inteligencia artificial de Google, capaz de entender texto, imágenes y vídeo.</p>
+            </div>
+
+            <div id="claude" class="caja-info">
+                <h2>Claude</h2>
+                <p>Una IA creada por Anthropic que se centra en ser segura y procesar libros enteros muy rápido.</p>
+            </div>
+
+            <div id="dalle" class="caja-info">
+                <h2>DALL-E</h2>
+                <p>Es capaz de generar imágenes artísticas y realistas simplemente escribiendo lo que quieres ver.</p>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>Página creada para aprender programación web.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

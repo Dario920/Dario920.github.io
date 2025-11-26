@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas de Tareas</title>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+    <header>
+        <h1>Listas y enlaces a IAs</h1>
+    </header>
+
+    <nav>
+        <ul class="nav-menu">
+            <li><a class="lista-nav" href="/tareas/">Inicio</a></li>
+            <li><a class="lista-nav" href="/tareas/listas/">Listas de Tareas</a></li>
+            <li><a class="lista-nav" href="/tareas/ias/">Enlaces a IAs</a></li>
+        </ul>
+    </nav>
+
+    <aside>
+        <h2>Mejores IAs</h2>
+        <ul">
+            <li><a class="lista-nav" href="/tareas/">Inicio</a></li>
+            <li><a class="lista-nav" href="/tareas/listas/">Listas de Tareas</a></li>
+            <li><a class="lista-nav" href="/tareas/ias/">Enlaces a IAs</a></li>
+        </ul>
+    </aside>
+
+    <main>
+        <section>
+            <ul class="task-lists">
+                <li class="task-list-item">
+                            <a href="/tareas/listas/{{ lista.id }}/">
+                            </a>
+                        </li>
+                </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gestor de Tareas</p>
+    </footer>
+</body> 
+</html>

@@ -1,0 +1,97 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: linear-gradient(to right, #50caf6, #c8f0ff, #50caf6);
+    border: #4e4e4e solid 2px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 15px 0;
+}
+
+aside {
+    width: 200px;
+    height: 160vh;
+    background-color: #51b4ff;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    background-color: #2e8db0;
+    overflow: hidden;
+    list-style-type: none;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    align-items: center;
+    justify-content: center;
+    float: center;
+    text-decoration: none;
+}
+
+a:hover, .sombra:hover {
+    transform: scale(1.1);
+    background-color: #005b7f;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+section {
+    padding: 20px;
+}
+
+.task-lists {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-list-item {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+}
+
+footer {
+    background-color: #d1d1d1;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    border: #4e4e4e solid 2px;
+}
+
+footer p {
+    margin: 0;
+}
