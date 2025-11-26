@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Posiciones Anchor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .cuadro {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(31, 141, 178);
+        }
+        .top-left {
+            position: relative;
+            top: 50px;
+            background-color: rgb(255, 0, 0);
+            opacity: 69%;
+        }
+        .top-right {
+            position: relative;
+            margin-right: 0px;
+            background-color: green;
+            opacity: 20%;
+            right: calc(100vw - 500px);
+        }
+        .bottom {
+            width: 100vw;
+            height: 50px;
+            background-color: black;
+            margin-bottom: 0px;
+            position: absolute;
+            flex: 0 0 auto;
+        }
+        .pink-ball {
+            width: 25vw;
+            height: 25vh;
+            background-color: rgb(255, 0, 43);
+            border-radius: 50%;
+            position: absolute;
+            top: calc(50vh - 50px);
+            left: calc(50vw - 50px);
+            right: calc(50vh - 50px);
+            bottom: calc(50vh - 50px);
+            transition: all 60s;
+        }
+        .azul:hover {
+            background-color: rgb(255, 255, 255);
+            width: calc(25vw * 4);
+            height: calc(25vh * 4);
+            transition: all 60s;
+        }
+    </style>
+</head>
+<body>
+    <div class="cuadro top-left"></div>
+    <div class="cuadro top-right"></div>
+    <div class="bottom"></div>
+    <div class="pink-ball azul"></div>
+
+</body>
+</html>

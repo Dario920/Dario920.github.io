@@ -1,0 +1,17 @@
+        *{
+            scroll-behavior: smooth;
+        }
+        a{
+            display: block;
+        }
+
+        .bolita{
+                background-color: linear-gradient(to right, rgb(0, 174, 255), rgb(125, 207, 255));
+                width: calc(300px);
+                height: 100vh;
+                border-radius: 50%;
+                position: relative;
+                left: calc(50vw / 2);
+                top: calc(50vh - 150px);
+                opacity: 100%;
+        }

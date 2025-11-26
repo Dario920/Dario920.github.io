@@ -1,6 +1,13 @@
-body {
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     background-color: #ffffff;
 }
 header {
@@ -39,9 +46,10 @@ a:hover, .sombra:hover {
     gap: 35px;
 }
 
+
 .aside-left {
     width: 220px;
-    min-height: 100vh;
+    min-height: 210vh;
     background-color: #c7c7c7;
     padding: 10px;
     border: 1px solid #ccc;
@@ -50,7 +58,7 @@ a:hover, .sombra:hover {
 
 .aside-right {
     width: 220px;
-    min-height: 100vh;
+    min-height: 213.6vh;
     background-color: #c7c7c7;
     padding: 10px;
     border: 1px solid #ccc;
@@ -69,10 +77,9 @@ footer {
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 10px 0;
-    position: fixed;
-    bottom: 0;
     width: 100%;
     border: #4e4e4e solid 2px;
+    margin-top: auto; /* push footer to bottom when layout is short */
 }
 
 .g-maps {
