@@ -38,6 +38,7 @@ nav ul li a {
 }
 a:hover, .sombra:hover {
     background-color: #4e4e4e;
+    transition: all 0.4s ease;
 }
 
 .layout {
