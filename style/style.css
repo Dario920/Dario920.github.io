@@ -8,19 +8,20 @@ body {
     min-height: 100vh; /* Mantiene altura mínima */
     display: flex; /* Usamos flex para layout */
     flex-direction: column;
-    background-color: #f0f2f5;
+    background-color: #F5F6F7; /* Fondo principal elegante */
+    color: #2A2E35; /* Color de texto principal elegante */
 }
 
 header {
-    background: linear-gradient(to right, #6d6d6d, #ffffff, #6d6d6d); /* Estilo de header */
-    border: #4e4e4e solid 2px;
-    color: rgb(0, 0, 0);
+    background: linear-gradient(to right, #2F4858, #779db4, #2F4858); /* Estilo de header */
+    border: #3C5A6D solid 2px;
+    color: #FFFFFF;
     text-align: center;
 }
 
 nav ul {
     list-style-type: none; /* Quita puntos de la lista */
-    background-color: #333; /* Fondo barra navegación */
+    background-color: #2F4858; /* Fondo barra navegación */
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -32,16 +33,10 @@ nav ul li{
 
 nav ul li a {
     display:flex; /* Centra contenido del enlace */
-    color: white;
+    color: #FFFFFF;
     padding: 14px 20px;
     text-decoration: none;
 }
-
-a:hover, .sombra:hover {
-    background-color: #4e4e4e; /* Efecto hover */
-    transition: all 0.4s ease;
-}
-
 
 .layout {
     display: flex; 
@@ -50,22 +45,23 @@ a:hover, .sombra:hover {
     padding: 0; 
     width: 100%; /* Ocupa todo el ancho */
     max-width: none; 
-    margin: 0; 
+    margin: 0;
+    flex: 1; /* Permite que el layout crezca para llenar el espacio disponible */
 }
 
 .aside-left {
     width: 220px; /* Ancho fijo para la barra lateral izquierda */
-    background-color: #c7c7c7; 
+    background-color: #DFE3E6; 
     padding: 10px; /* Espaciado interno */
-    border: 1px solid #ccc;
+    border: 1px solid #2F4858;
     order: -1; /* Se coloca a la izquierda antes que el main */
 }
 
 .aside-right {
     width: 220px; /* Ancho fijo para la barra lateral derecha */
-    background-color: #c7c7c7; 
+    background-color: #DFE3E6; 
     padding: 10px; /* Espaciado interno */
-    border: 1px solid #ccc; 
+    border: 1px solid #2F4858; 
     box-sizing: border-box; /* Incluye padding dentro del ancho total */
 }
 
@@ -77,60 +73,64 @@ main {
 }
 
 footer {
-    background-color: #d1d1d1; 
-    color: rgb(0, 0, 0); 
+    background-color: #E1E1E1; 
+    color: #2A2E35; 
     text-align: center; /* Centra el texto */
     padding: 10px 0; /* Espaciado arriba y abajo */
     width: 100%; 
-    border: #4e4e4e solid 2px; 
+    border: #747474 solid 2px; 
     margin-top: auto; /* Empuja el footer al final de la página */
 }
 
 .g-maps {
-    margin-top: 20px;
-    padding: 10px;
-    display:flex; /* Contenedor flexible para centrar contenido */
-    color: rgb(0, 0, 0);
+    width: 100%; 
+    font-size: 24px; 
+    padding: 6px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    align-items: center; /* Centra verticalmente */
-    justify-content: center; /* Centra horizontalmente */
-    float: center; 
-    text-decoration: none; /* Quita subrayado */
-    border: 2px solid #000; 
-    background-color: #a0a0a0; 
-    color: rgb(0, 0, 0);
-    border-radius: 6px; /* Bordes redondeados */
+    line-height: 1.2;
+    margin-top: 15px; 
+    color: #2A2E35;
+    text-decoration: none;
+    border: 2px solid #2F4858; 
+    background-color: #C7CCD1; 
+    border-radius: 6px; 
+    box-sizing: border-box;
+    cursor: pointer;
 }
 
 .titulo-temario {
     font-size: 24px; /* Tamaño del título */
     font-weight: bold; /* Texto en negrita */
-    color: #333; 
+    color: #2A2E35; 
     margin-top: 0px; 
     margin-bottom: 10px;
 }
 
 .temarios-list {
     margin-bottom: 8px; /* Separación entre elementos */
-    padding-left: 10px;
-    padding: 10px;
+    padding: 8px 10px;
     display:flex; /* Para centrar el contenido del item */
     text-align: center;
     align-items: center;
     justify-content: center;
-    float: center; 
-    border: 2px dotted gray; /* Borde punteado */
-    background-color: #e1e1e1;
+    border: 2px dotted #2F4858; /* Borde punteado */
+    background-color: #E1E1E1;
     transition: all 0.3s ease; /* Animación al pasar el ratón */
+    font-size: 25px; /* Tamaño de letra unificado */
+    line-height: 1.2; /* Mejor alineación vertical */
 }
 
 .temarios-list:hover {
-    background-color: #b6b6b6; /* Cambia el fondo al pasar el raton */
+    background-color: #C7CCD1; /* Cambia el fondo al pasar el raton */
 }
 
 .temarios-list a {
     text-decoration: none; /* Quita subrayado de los enlaces */
-    color: black;
+    color: #3f4e6a;
+    font-size: inherit; /* Hereda 25px del contenedor */
 }
 
 .logo {
@@ -144,27 +144,25 @@ footer {
     font-size: 20px;
 }
 
-/* Estilos generales para los detalles */
+.link-size-text {
+    font-size: 25px;
+}
+
+/* Estilos generales para los detalles (aside de la derecha) */
 details {
-    background-color: #cac8c8;
-    border: 2px solid #000000;
+    background-color: #DFE3E6;
+    border: 2px solid #2F4858;
     border-radius: 8px;
     padding: 12px 18px;
     margin: 10px 0;
     box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
     transition: background-color 0.3s, border-color 0.3s;
-}
-
-details:hover {
-    background-color: #e6e6e6;
-    border-color: #747474;
-    color: grey;
+    cursor: pointer;
 }
 
 details summary {
     font-weight: 700;
     font-size: 1.1rem;
-    color: #000000;
     list-style: none;
     outline: none;
 }
@@ -172,7 +170,15 @@ details summary {
 details p {
     margin: 10px 0 0 0;
     padding-left: 15px;
-    color: #333;
     line-height: 1.5;
     font-size: 0.95rem;
+}
+
+
+/* Efectos hover */
+
+a:hover, .sombra:hover, details:hover {
+    background-color: #1F3340; 
+    transition: all 0.4s ease;
+    color:#75abcc
 }

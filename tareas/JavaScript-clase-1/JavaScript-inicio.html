@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a JavaScript</title>
+
+    <style>
+        .tamaño {
+            width: 200px;
+            height: auto;
+        }
+
+        .tamaño-temas {
+            width: 65px; 
+            height: 65px; 
+            object-fit: cover; 
+            border-radius: 50%;
+        }
+        
+        .contenedor-emociones {
+            height: 250px; 
+            position: relative; 
+            
+        }
+        .contenedor-emociones img {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    .buttons-1 {
+            width: 150px;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            border: none; 
+            background-color: gray;
+            border-radius: 5px;
+            box-shadow: inset 0 0 5px #000000;
+            cursor: pointer;
+        } 
+        .buttons-1:hover {
+            background-color: darkgray;
+        }
+
+        .temas {
+            width: 75px;
+            height: 75px;
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            
+            margin: 10px;
+            padding: 5px;
+            border-radius: 50%;
+            background-color: lightgray;
+            box-shadow: inset 0 0 5px #000000;
+            border: none;
+            cursor: pointer;
+        }
+        .temas:hover {
+            background-color: silver;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Ejercicio JavaScript</h1>
+
+        <button class="buttons-1"  type="button" onclick='document.getElementById("saludo").innerHTML = "¡Hola, JavaScript!"'> java </button>
+            <p id="saludo">Hola buenos días</p>
+
+<div class="contenedor-emociones">
+    <img class="tamaño" id="neutral" src="img/neutral.png">
+    <img class="tamaño" id="sonrie" src="img/sonriente.jpg" hidden>
+    <img class="tamaño" id="triste" src="img/triste.jpg" hidden>
+</div>
+
+<!--Aquí vemos los botones que alternan entre Sonriente, Triste y Neutral-->
+<button class="buttons-1" onclick='
+    document.getElementById("neutral").hidden = true; 
+    document.getElementById("sonrie").hidden = false; 
+    document.getElementById("triste").hidden = true;'> Sonreir </button> <br>
+
+<button class="buttons-1" onclick='
+    document.getElementById("neutral").hidden = true; 
+    document.getElementById("sonrie").hidden = true; 
+    document.getElementById("triste").hidden = false;'> Triste </button> <br>
+
+<button class="buttons-1" onclick='
+    document.getElementById("neutral").hidden = false; 
+    document.getElementById("sonrie").hidden = true; 
+    document.getElementById("triste").hidden = true;'> Neutral </button> <br>
+
+
+
+<!--Aquí veremos los cambios de "Tema", Oscuro y Claro-->
+<button class="temas" onclick="
+    document.body.style.backgroundColor = 'rgb(57, 57, 57)'; 
+    document.body.style.color = 'white';">
+        <img id="luna" class="tamaño-temas" src="img/noche.png">
+</button>
+
+<button class="temas" onclick="
+    document.body.style.backgroundColor = 'white'; 
+    document.body.style.color = 'black';">
+        <img id="sol" class="tamaño-temas" src="img/sol.png">
+</button>
+
+
+<!--Ocultar y aparecer Árbol, generado con Gemini, info para clase-->
+<p>Cuando hagas clic al botón de abajo el árbol desaparece</p>
+<button class="buttons-1" onclick=" /* Añadida clase buttons-1 para uniformidad */
+    const arbol = document.getElementById('arbol');
+    arbol.hidden = !arbol.hidden; /* Alterna la visibilidad (true/false) */
+    this.innerHTML = arbol.hidden ? 'Mostrar árbol' : 'Quitar árbol'; /* Cambia el texto */
+">Quitar árbol</button>
+
+<img id="arbol" class="tamaño" src="img/Imagen pegada.png">
+
+<!--En lugar de ocultar con hidden, quiero hacero con display-->
+<img id="arbol" class="tamaño" src="img/arbol2.png">
+<button class="buttons-1" onclick="document.getElementById('arbol').style.display = 'none';"> Quitar árbol </button>
+<button class="buttons-1" onclick="document.getElementById('arbol').style.display = 'block';"> Mostrar árbol </button>
+
+<p>
+
+El DOM (siglas de Document Object Model, o Modelo de Objetos del Documento) es una interfaz de programación para documentos HTML y XML. Representa la estructura de una página web como un árbol de objetos, permitiendo a los lenguajes de programación, como JavaScript, acceder a los elementos del documento y manipular su contenido, estructura y estilo de forma dinámica.
+¿Cómo funciona el DOM?
+Cuando un navegador web carga una página HTML, crea internamente una representación en memoria de esa página. Esta representación es el DOM y sigue una estructura jerárquica de árbol.
+Documento: Es el nodo raíz del árbol, que representa toda la página web.
+Elementos: Cada etiqueta HTML (como <body>, <h1>, <div>, <p>) se convierte en un objeto, o nodo, dentro del árbol.
+Atributos: Los atributos de las etiquetas (id, class, src, etc.) también se representan como nodos.
+Contenido de texto: El texto dentro de las etiquetas también es un nodo.
+¿Para qué sirve?
+El DOM actúa como un puente entre la página web estática y el código de programación, permitiendo que los desarrolladores:
+Modifiquen el contenido: Actualicen textos o imágenes sin recargar la página.
+Cambien la estructura: Añadan, eliminen o reordenen elementos HTML.
+Alteran el estilo: Cambien las propiedades CSS para modificar la apariencia de los elementos.
+Manejen eventos: Reaccionen a las interacciones del usuario, como clics en botones o entradas de texto.
+Ejemplo de manipulación del DOM
+Imagina un documento HTML simple:
+html
+<!DOCTYPE html>
+<html>
+<body>
+<h1 id="titulo">Hola, mundo</h1>
+</body>
+</html>
+Usa el código con precaución.
+
+Con JavaScript, podrías manipular este documento a través del DOM de la siguiente manera:
+javascript
+// Acceder al elemento con el id "titulo"
+const tituloElemento = document.getElementById('titulo');
+
+// Modificar el contenido del elemento
+tituloElemento.textContent = '¡Hola, desde JavaScript!';
+
+// Crear un nuevo párrafo
+const nuevoParrafo = document.createElement('p');
+nuevoParrafo.textContent = 'Este párrafo ha sido añadido con JavaScript.';
+
+// Añadir el nuevo párrafo al cuerpo del documento
+document.body.appendChild(nuevoParrafo);
+Usa el código con precaución.
+
+Este código permite modificar el contenido del <h1> y añadir un nuevo <p> sin necesidad de recargar la página, haciendo que el sitio web sea interactivo y dinámico.
+</p>
+
+</body>
+</html>

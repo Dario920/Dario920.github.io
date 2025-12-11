@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título que aparece en la pestaña del navegador -->
+    <title>Listas de Tareas</title>
+
+    <!-- Enlace a la hoja de estilos principal -->
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+
+    <!-- Cabecera de la página -->
+    <header>
+        <h1>Listas y enlaces a IAs</h1>
+    </header>
+
+    <!-- Menú de navegación principal -->
+    <nav>
+        <ul class="nav-menu">
+            <li><a class="lista-nav" href="/tareas/">Inicio</a></li>
+            <li><a class="lista-nav" href="/tareas/listas/">Listas de Tareas</a></li>
+            <li><a class="lista-nav" href="/tareas/ias/">Enlaces a IAs</a></li>
+        </ul>
+    </nav>
+
+    <!-- Barra lateral con enlaces destacados -->
+    <aside>
+        <h2>Mejores IAs</h2>
+        <ul>
+            <li><a class="lista-nav" href="/tareas/">Inicio</a></li>
+            <li><a class="lista-nav" href="/tareas/listas/">Listas de Tareas</a></li>
+            <li><a class="lista-nav" href="/tareas/ias/">Enlaces a IAs</a></li>
+        </ul>
+    </aside>
+
+    <!-- Contenido principal -->
+    <main>
+        <section>
+            <!-- Lista de tareas dinámica (probablemente con Django u otro framework) -->
+            <ul class="task-lists">
+                <li class="task-list-item">
+                    <a href="/tareas/listas/{{ lista.id }}/">
+                        <!-- Aquí iría el nombre de la lista -->
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Gestor de Tareas</p>
+    </footer>
+
+</body> 
+</html>

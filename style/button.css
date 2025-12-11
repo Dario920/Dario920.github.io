@@ -1,66 +1,45 @@
-/*Botones de los temarios*/
-
-button {
-position: relative;
-display: flex;
-justify-content: center;
-align-items: center;
-border-radius: 5px;
-background: #575757;
-font-family: "Montserrat", sans-serif;
-box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
-overflow: hidden;
-cursor: pointer;
-border: none;
-margin: 10px;
-border: solid 2px #000;
-width: 100%;
+.button {
+  cursor: pointer;
+  position: relative;
+  padding: 15px; /* Igual que los main button */
+  font-size: 1.1rem;
+  color: #FFFFFF;
+  border: 2px solid #2F4858;
+  border-radius: 4px;
+  background-color: #2F4858;
+  font-weight: 600;
+  width: 100%; /* Ocupa todo el ancho */
+  text-align: center;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  margin: 15px 0;
 }
 
-button:after {
-content: " ";
-width: 0%;
-height: 100%;
-background: #b8b8b8;
-position: absolute;
-transition: all 0.4s ease-in-out;
-right: 0;
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Siempre cubre todo el ancho del botón */
+  height: 100%; /* Siempre cubre toda la altura del botón */
+  border-radius: inherit;
+  transform: scale(0);
+  z-index: -1;
+  background-color: #1F3340; /* Hover más oscuro */
+  transition: transform 0.6s ease;
+  transform-origin: center;
 }
 
-button:hover::after {
-right: auto;
-left: 0;
-width: 100%;
+.button:hover::before {
+  transform: scale(1); /* Siempre cubre todo el botón */
 }
 
-button span {
-text-align: center;
-text-decoration: none;
-width: 100%;
-padding: 15px 10vw;
-color: #fff;
-font-size: 1.125em;
-font-weight: 700;
-letter-spacing: 0.3em;
-z-index: 20;
-transition: all 0.3s ease-in-out;
+.button:hover {
+  color: #FFFFFF; /* Texto sigue claro */
+  box-shadow: 0 0px 20px rgba(31, 51, 64, 0.4);
+  scale: 1.03;
 }
 
-button:hover span {
-color: #000000;
-animation: scaleUp 0.3s ease-in-out;
-}
-
-@keyframes scaleUp {
-0% {
-    transform: scale(1);
-}
-
-50% {
-    transform: scale(0.95);
-}
-
-100% {
-    transform: scale(1);
-}
+.button:active {
+  transform: scale(1);
 }
