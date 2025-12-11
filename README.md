@@ -4,7 +4,7 @@
     
 <img src="https://raw.githubusercontent.com/Dario920/Dario920.github.io/main/img/logo-sin-fondo-2.png" width="150" alt="Logo de Darío con etiqueta HTML" />
     
-### 🛠️ Estudiante de Sistemas Microinformáticos y Redes (SMR) | Desarrollador Web Frontend en Aprendizaje
+### 🛠️ Estudiante de Sistemas Microinformáticos y Redes | Desarrollador Web Frontend en Aprendizaje
 
 </div>
 
