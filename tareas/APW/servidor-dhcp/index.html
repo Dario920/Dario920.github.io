@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <div>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta name="Darío" content="Marisol">
-        <meta name="Description" content="repaso del HEAD y los estilos en cascada">
-        <meta name="Keywords" content="HTML, CSS, JavaScript, DHCP, Redes, Servidor DHCP">
-    </div>
-<title>DHCP</title>
-    <div>
-        <link rel="stylesheet" href="/style/styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    </div>
-<script src="js/scripts.js"></script>
+    <!-- Metadatos básicos y SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Darío" content="Marisol">
+    <meta name="Description" content="repaso del HEAD y los estilos en cascada">
+    <meta name="Keywords" content="HTML, CSS, JavaScript, DHCP, Redes, Servidor DHCP">
+
+    <title>DHCP</title>
+
+    <!-- Fuentes y estilos -->
+    <link rel="stylesheet" href="/style/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Scripts generales -->
+    <script src="js/scripts.js"></script>
+
+    <!-- Estilo interno para iconos simples -->
     <style>
-        /* Estilo para el icono de red en el encabezado si no se usa un SVG o fuente de iconos */
+        /* Icono de red en encabezado */
         .icon-network::before { content: '🌐'; margin-right: 10px; }
     </style>
 </head>
 <body>
 
+    <!-- Encabezado con navegación principal -->
     <header id="header">
         <nav>
             <a href="#intro">DHCP Básico</a>
@@ -34,36 +39,41 @@
         </nav>
     </header>
 
+    <!-- Contenido principal -->
     <main>
+
+        <!-- Sección Hero / Introducción -->
         <section id="hero" class="hero">
             <h1><span class="icon-network"></span>DHCP: El Corazón de la Conectividad IP</h1>
             <p>Protocolo de Configuración Dinámica de Host</p>
             <button onclick="document.getElementById('intro').scrollIntoView({behavior: 'smooth'})">Explorar Secciones</button>
         </section>
 
+        <!-- Sección 1: Introducción -->
         <section id="intro" class="content-section">
             <h2 class="section-title">1. Introducción al Protocolo DHCP</h2>
             <div class="card">
                 <h3>Función Esencial</h3>
-                <p>DHCP está diseñado para <strong>asignar automáticamente</strong> parámetros de red esenciales, tales como la dirección IP, máscara de subred, puerta de enlace predeterminada (Gateway) y Servidores DNS, a todos los clientes que se conectan a una red. Esto elimina la necesidad de configuración manual por dispositivo.</p>
+                <p>DHCP asigna automáticamente parámetros de red esenciales a los clientes.</p>
             </div>
 
+            <!-- Ventajas y riesgos resumidos -->
             <div class="split-cards">
                 <div class="card advantage">
                     <h3>✅ Ventajas Clave</h3>
                     <ul>
-                        <li><strong>Automatización:</strong> Reduce la carga administrativa.</li>
-                        <li><strong>Centralización:</strong> Gestión de IPs desde un punto único.</li>
-                        <li><strong>Prevención de Conflictos:</strong> Garantiza que cada dispositivo tenga una IP única.</li>
-                        <li><strong>Movilidad:</strong> Facilita la conexión y desconexión de dispositivos.</li>
+                        <li>Automatización</li>
+                        <li>Centralización</li>
+                        <li>Prevención de Conflictos</li>
+                        <li>Movilidad</li>
                     </ul>
                 </div>
                 <div class="card risk">
                     <h3>⚠️ Riesgos y Desafíos</h3>
                     <ul>
-                        <li><strong>Dependencia:</strong> Si el servidor falla, ningún cliente nuevo puede conectarse.</li>
-                        <li><strong>Vulnerabilidad:</strong> Propenso a ataques como el <strong>DHCP Spoofing</strong>.</li>
-                        <li><strong>Agotamiento de IP:</strong> Malas configuraciones o ataques pueden consumir todo el rango disponible.</li>
+                        <li>Dependencia del servidor</li>
+                        <li>Vulnerabilidad a ataques</li>
+                        <li>Agotamiento de IP</li>
                     </ul>
                 </div>
             </div>
@@ -71,116 +81,109 @@
 
         <hr>
 
+        <!-- Sección 2: Proceso DORA -->
         <section id="dora" class="content-section">
-            <h2 class="section-title">2. El Proceso DORA: La Negociación de la IP</h2>
-            <p class="subtitle">DHCP utiliza el <strong>Protocolo de Datagramas de Usuario (UDP)</strong> en los puertos **67 (Servidor)** y **68 (Cliente)** para esta secuencia fundamental de 4 pasos.</p>
+            <h2 class="section-title">2. El Proceso DORA</h2>
+            <p>Secuencia de 4 pasos para asignación de IPs dinámicas.</p>
 
             <div class="dora-steps">
                 <div class="dora-card" data-step="1">
-                    <h4><span class="dora-label">D</span>iscover (Descubrimiento)</h4>
-                    <p>El cliente envía un mensaje de <strong>broadcast</strong> (0.0.0.0 a 255.255.255.255) buscando servidores DHCP disponibles en la red.</p>
+                    <h4>D - Discover</h4>
+                    <p>Cliente busca servidores disponibles.</p>
                 </div>
                 <div class="dora-card" data-step="2">
-                    <h4><span class="dora-label">O</span>ffer (Oferta)</h4>
-                    <p>El servidor responde con un <strong>mensaje unicast o broadcast</strong>, ofreciendo una dirección IP libre y un tiempo de concesión (Lease Time).</p>
+                    <h4>O - Offer</h4>
+                    <p>Servidor ofrece IP y configuración.</p>
                 </div>
                 <div class="dora-card" data-step="3">
-                    <h4><span class="dora-label">R</span>equest (Solicitud)</h4>
-                    <p>El cliente, si recibe múltiples ofertas, elige una y envía un <strong>broadcast</strong> formalizando la solicitud y aceptando la configuración ofrecida.</p>
+                    <h4>R - Request</h4>
+                    <p>Cliente solicita la IP elegida.</p>
                 </div>
                 <div class="dora-card" data-step="4">
-                    <h4><span class="dora-label">A</span>cknowledge (Confirmación)</h4>
-                    <p>El servidor seleccionado envía el paquete final de confirmación, asignando la IP y los parámetros de red de forma definitiva al cliente.</p>
+                    <h4>A - Acknowledge</h4>
+                    <p>Servidor confirma asignación final.</p>
                 </div>
             </div>
         </section>
 
         <hr>
 
+        <!-- Sección 3: Configuración DHCP -->
         <section id="config" class="content-section">
             <h2 class="section-title">3. Configuración y Parámetros Clave</h2>
 
             <h3>Creación del Ámbito (Scope)</h3>
-            <p>La configuración central en un servidor DHCP (ej. Windows Server) es el **Ámbito (Scope)**. Este define el rango de direcciones IP (pool) disponibles para la asignación dinámica, además de excluir aquellas IPs que deben ser estáticas.</p>
+            <p>Define el rango de direcciones IP dinámicas y exclusiones para estáticas.</p>
 
             <div class="config-details">
                 <div class="card param-card">
-                    <h4>Parámetros de Red Asignados</h4>
-                    <p>El servidor asigna la configuración de red mediante <strong>Códigos de Opción DHCP</strong>:</p>
+                    <h4>Parámetros de Red</h4>
                     <ul>
-                        <li><strong>Código 1:</strong> Máscara de Subred</li>
-                        <li><strong>Código 3:</strong> Router (Puerta de Enlace Predeterminada)</li>
-                        <li><strong>Código 6:</strong> Servidores DNS</li>
-                        <li>(Y muchos otros, como WINS, nombre de dominio, etc.)</li>
+                        <li>Máscara de Subred</li>
+                        <li>Router / Gateway</li>
+                        <li>Servidores DNS</li>
                     </ul>
                 </div>
                 <div class="card param-card lease-time">
-                    <h4>Tiempo de Concesión (Lease Time)</h4>
-                    <p>El período durante el cual el cliente mantiene la dirección IP asignada.</p>
-                    <div class="lease-options">
-                        <div>
-                            <h5>Corto</h5>
-                            <p>Más overhead por renovaciones, pero más seguridad y eficiencia en redes con alta rotación (ej. Wi-Fi de un aeropuerto).</p>
-                        </div>
-                        <div>
-                            <h5>Largo</h5>
-                            <p>Menos tráfico DHCP. Mayor riesgo de agotamiento si la red crece rápidamente, ya que las IPs tardan más en liberarse.</p>
-                        </div>
-                    </div>
+                    <h4>Tiempo de Concesión</h4>
+                    <p>Periodo durante el cual un cliente mantiene la IP asignada.</p>
                 </div>
             </div>
         </section>
 
         <hr>
 
+        <!-- Sección 4: Failover -->
         <section id="failover" class="content-section">
             <h2 class="section-title">4. Alta Disponibilidad (Failover)</h2>
-            <p>La redundancia es clave. El **DHCP Failover** (solo para ámbitos IPv4) permite que dos servidores compartan y repliquen configuraciones para asegurar la continuidad del servicio.</p>
+            <p>Redundancia para asegurar continuidad del servicio DHCP.</p>
 
             <div class="failover-modes">
                 <div class="mode-card">
-                    <h3>Hot Standby (Reserva Activa)</h3>
-                    <p>Un servidor está <strong>activo</strong> y gestiona la mayoría de las solicitudes (ej. 95% del pool de IPs), mientras que el segundo servidor actúa como <strong>reserva</strong> y solo toma el control si el principal falla. Es ideal para alta fiabilidad.</p>
+                    <h3>Hot Standby</h3>
+                    <p>Un servidor activo, otro en reserva.</p>
                 </div>
                 <div class="mode-card">
-                    <h3>Load Balance (Equilibrio de Carga)</h3>
-                    <p>Ambos servidores asignan IPs <strong>simultáneamente</strong>, repartiendo la carga de trabajo y el pool de direcciones (por defecto 50:50). Aumenta el rendimiento y la tolerancia a fallos por carga.</p>
+                    <h3>Load Balance</h3>
+                    <p>Ambos servidores reparten la carga.</p>
                 </div>
             </div>
         </section>
 
         <hr>
 
+        <!-- Sección 5: Seguridad y Reservas -->
         <section id="security" class="content-section">
-            <h2 class="section-title">5. Seguridad, Reservas y Diagnóstico</h2>
+            <h2 class="section-title">5. Seguridad y Diagnóstico</h2>
 
             <div class="security-flex">
                 <div class="card troubleshooting">
-                    <h3>Diagnóstico y Solución de Problemas</h3>
-                    <p>La herramienta fundamental es la **Captura de Paquetes** (ej. Wireshark o tcpdump).</p>
-                    <p><strong>Clave:</strong> Verificar que los mensajes DISCOVER (desde el cliente) y OFFER (desde el servidor) se estén generando y recibiendo correctamente en la interfaz de red.</p>
+                    <h3>Diagnóstico</h3>
+                    <p>Usar captura de paquetes para verificar mensajes DHCP.</p>
                 </div>
                 <div class="card vulnerabilities">
-                    <h3>Principales Vulnerabilidades</h3>
+                    <h3>Vulnerabilidades</h3>
                     <ul>
-                        <li><strong>Ataque de Agotamiento (DoS):</strong> El atacante satura el servidor con solicitudes falsas, consumiendo todas las IPs disponibles.</li>
-                        <li><strong>Ataque de Suplantación (Spoofing):</strong> Un servidor no autorizado (atacante) responde antes que el legítimo, redirigiendo el tráfico de los clientes.</li>
+                        <li>DoS / Agotamiento de IP</li>
+                        <li>Spoofing / Suplantación</li>
                     </ul>
                 </div>
             </div>
             
             <div class="card reservation">
                 <h3>Reservas DHCP</h3>
-                <p>Permite **asignar una IP fija y específica** dentro del ámbito DHCP a una dirección **MAC** particular.</p>
-                <p class="best-practice"><strong>Mejor Práctica:</strong> Aunque debatible, muchos expertos recomiendan ubicar las reservas **fuera del rango de direcciones dinámicas** para una diferenciación y gestión más claras. ¡Esto evita colisiones lógicas!</p>
+                <p>IP fija asignada a una MAC específica fuera del rango dinámico.</p>
             </div>
         </section>
+
     </main>
 
+    <!-- Pie de página -->
     <footer>
         <p>DHCP: Protocolo fundamental de redes modernas. Creado para Hostinger Horizons. 🚀</p>
     </footer>
 
+    <!-- Scripts al final del body -->
     <script src="scripts.js"></script>
 </body>
 </html>

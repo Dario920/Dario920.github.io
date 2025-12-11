@@ -4,7 +4,7 @@
         a{
             display: block;
         }
-
+/*metemos solo un poco como va a ser la bola que se muestra*/
         .bolita{
                 background-color: linear-gradient(to right, rgb(0, 174, 255), rgb(125, 207, 255));
                 width: calc(300px);

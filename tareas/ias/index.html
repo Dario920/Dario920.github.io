@@ -2,7 +2,11 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+
+    <!-- Título que aparece en la ventana del navegador -->
     <title>Mi Web de IA</title>
+
+    <!-- Enlace al archivo CSS principal -->
     <link rel="stylesheet" href="style/main.css">
 </head>
 <body>
@@ -10,6 +14,7 @@
     <header>
         <h1>INTELIGENCIA ARTIFICIAL</h1>
         
+        <!-- Contenedor con logos de distintas empresas de IA -->
         <div class="header-images">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS3PwERLLNB9XKFpeMgAMPxl5VvN3HRJnXQQ&s" alt="OpenAI Logo">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJw_dcTPdJvT1x-HciEDfXOC19WlINd9MJCA&s" alt="DeepMind Logo">
@@ -18,6 +23,7 @@
         </div>
     </header>
 
+    <!-- Menú de navegación principal con enlaces externos -->
     <nav>
         <a href="https://openai.com" target="_blank">OpenAI</a>
         <a href="https://google.com" target="_blank">Google DeepMind</a>
@@ -27,6 +33,7 @@
 
     <div class="contenedor">
         
+        <!-- Barra lateral con botones para mostrar info -->
         <aside>
             <h3>Elige una opción:</h3>
             <button onclick="verIA('chatgpt')">ChatGPT</button>
@@ -35,12 +42,16 @@
             <button onclick="verIA('dalle')">DALL-E</button>
         </aside>
 
+        <!-- Parte central donde aparece la información -->
         <main>
+
+            <!-- Sección por defecto cuando no has pulsado nada -->
             <div id="intro" class="caja-info visible">
                 <h2>Bienvenido</h2>
                 <p>Selecciona una IA en el menú de la izquierda para ver su descripción aquí.</p>
             </div>
 
+            <!-- Contenido de cada IA (ocultos al inicio) -->
             <div id="chatgpt" class="caja-info">
                 <h2>ChatGPT</h2>
                 <p>Es un chat inteligente creado por OpenAI que responde preguntas y escribe textos.</p>
@@ -64,9 +75,11 @@
     </div>
 
     <footer>
+        <!-- Pie de página-->
         <p>Página creada para aprender programación web.</p>
     </footer>
 
+    <!-- Archivo JS donde está la lógica para mostrar y ocultar las cajas -->
     <script src="script.js"></script>
 </body>
 </html>

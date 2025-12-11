@@ -5,132 +5,131 @@ html, body {
 }
 
 body {
-    min-height: 100vh;
-    display: flex;
+    min-height: 100vh; /* Mantiene altura mínima */
+    display: flex; /* Usamos flex para layout */
     flex-direction: column;
     background-color: #f0f2f5;
 }
+
 header {
-    background: linear-gradient(to right, #6d6d6d, #ffffff, #6d6d6d);
+    background: linear-gradient(to right, #6d6d6d, #ffffff, #6d6d6d); /* Estilo de header */
     border: #4e4e4e solid 2px;
     color: rgb(0, 0, 0);
     text-align: center;
 }
+
 nav ul {
+    list-style-type: none; /* Quita puntos de la lista */
+    background-color: #333; /* Fondo barra navegación */
+    overflow: hidden;
     margin: 0;
     padding: 0;
-    background-color: #333;
-    overflow: hidden;
-    list-style-type: none;
 }
+
 nav ul li{
-    float: left;
+    float: left; /* Alinea enlaces horizontalmente */
 }
+
 nav ul li a {
-    display:flex;
+    display:flex; /* Centra contenido del enlace */
     color: white;
-    text-align: center;
     padding: 14px 20px;
-    align-items: center;
-    justify-content: center;
-    float: center;
     text-decoration: none;
 }
+
 a:hover, .sombra:hover {
-    background-color: #4e4e4e;
+    background-color: #4e4e4e; /* Efecto hover */
     transition: all 0.4s ease;
 }
 
+
 .layout {
-    display: flex;
-    align-items: stretch;
-    gap: 35px;
-    padding: 0;
-    width: 100%;
-    max-width: none;
-    margin: 0;
+    display: flex; 
+    align-items: stretch; /* Hacer que los elementos secundarios ocupen toda la altura */
+    gap: 35px; /* Espacio entre columnas */
+    padding: 0; 
+    width: 100%; /* Ocupa todo el ancho */
+    max-width: none; 
+    margin: 0; 
 }
 
-
 .aside-left {
-    width: 220px;
-    background-color: #c7c7c7;
-    padding: 10px;
+    width: 220px; /* Ancho fijo para la barra lateral izquierda */
+    background-color: #c7c7c7; 
+    padding: 10px; /* Espaciado interno */
     border: 1px solid #ccc;
-    order: -1;
+    order: -1; /* Se coloca a la izquierda antes que el main */
 }
 
 .aside-right {
-    width: 220px;
-    background-color: #c7c7c7;
-    padding: 10px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
+    width: 220px; /* Ancho fijo para la barra lateral derecha */
+    background-color: #c7c7c7; 
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; 
+    box-sizing: border-box; /* Incluye padding dentro del ancho total */
 }
 
 main {
-    flex: 1;
-    margin-top: 1.5rem;
-    margin-right: 2vw;
-    text-align: left;
+    flex: 1; /* Ocupa todo el espacio restante */
+    margin-top: 1.5rem; /* Separación superior */
+    margin-right: 2vw; 
+    text-align: left; /* Texto alineado a la izquierda */
 }
 
 footer {
-    background-color: #d1d1d1;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 10px 0;
-    width: 100%;
-    border: #4e4e4e solid 2px;
-    margin-top: auto;
+    background-color: #d1d1d1; 
+    color: rgb(0, 0, 0); 
+    text-align: center; /* Centra el texto */
+    padding: 10px 0; /* Espaciado arriba y abajo */
+    width: 100%; 
+    border: #4e4e4e solid 2px; 
+    margin-top: auto; /* Empuja el footer al final de la página */
 }
 
 .g-maps {
-    margin: 0;
-    padding: 0;
-    display:flex;
+    margin-top: 20px;
+    padding: 10px;
+    display:flex; /* Contenedor flexible para centrar contenido */
     color: rgb(0, 0, 0);
     text-align: center;
-    align-items: center;
-    justify-content: center;
-    float: center;
-    text-decoration: none;
-    border: 2px solid #000;
-    background-color: #757575;
-    overflow: hidden;
-    border-radius: 6px;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    float: center; 
+    text-decoration: none; /* Quita subrayado */
+    border: 2px solid #000; 
+    background-color: #a0a0a0; 
+    color: rgb(0, 0, 0);
+    border-radius: 6px; /* Bordes redondeados */
 }
 
 .titulo-temario {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    margin-top: 0px;
+    font-size: 24px; /* Tamaño del título */
+    font-weight: bold; /* Texto en negrita */
+    color: #333; 
+    margin-top: 0px; 
     margin-bottom: 10px;
 }
 
-
 .temarios-list {
-    margin-bottom: 8px;
+    margin-bottom: 8px; /* Separación entre elementos */
     padding-left: 10px;
     padding: 10px;
-    display:flex;
+    display:flex; /* Para centrar el contenido del item */
     text-align: center;
     align-items: center;
     justify-content: center;
-    float: center;
-    border: 2px dotted gray;
+    float: center; 
+    border: 2px dotted gray; /* Borde punteado */
     background-color: #e1e1e1;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease; /* Animación al pasar el ratón */
 }
 
 .temarios-list:hover {
-    background-color: #c7c7c7;
-
+    background-color: #b6b6b6; /* Cambia el fondo al pasar el raton */
 }
 
 .temarios-list a {
-    text-decoration: none;
+    text-decoration: none; /* Quita subrayado de los enlaces */
     color: black;
 }
 
@@ -138,9 +137,42 @@ footer {
     width: 70px;
     height: auto;
     padding: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Separación del contenido inferior */
 }
 
 .tamaño-letra {
     font-size: 20px;
+}
+
+/* Estilos generales para los detalles */
+details {
+    background-color: #cac8c8;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    padding: 12px 18px;
+    margin: 10px 0;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+details:hover {
+    background-color: #e6e6e6;
+    border-color: #747474;
+    color: grey;
+}
+
+details summary {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #000000;
+    list-style: none;
+    outline: none;
+}
+
+details p {
+    margin: 10px 0 0 0;
+    padding-left: 15px;
+    color: #333;
+    line-height: 1.5;
+    font-size: 0.95rem;
 }

@@ -11,8 +11,9 @@
         <meta name="Description" content="primera página web creada en Visual Studio Code por Darío">
         <meta name="Keywords" content="HTML, CSS, JavaScript, Visual Studio Code, primera web">
       </div>
-<!--Nombre de la página-->
+
 <title>Mi primera web</title>
+
 <style> 
       p{font-size: large; color: rgb(1, 176, 182);}
 
@@ -84,31 +85,42 @@
     }
   </style>
     </head>
+
     <body>
-<!--Título por estar con el "h1", luego vamos con h2, h3,... etc-->
-    <h1>esta es mi primera cabecera</h1>
-<!--Enlaces a las páginas que nos dijo, con <a href="enlace.com" y lgo le metemos un texto-->
+
+<!-- Título principal de la página, lo típico que se ve arriba del todo -->
+<h1>esta es mi primera cabecera</h1>
+
+<!-- Enlaces básicos para acceder a webs importantes que usamos en clase -->
 <a href="https://www.w3schools.com/default.asp">Enlace: W3schools</a> <br>
 <a href="https://validator.w3.org/nu">Enlace: W3c Validator</a> <br>
 <a href="https://www.w3.org/">Enlace: W3C</a> <br>
 <a href="https://developer.mozilla.org/es/">Enlace: Mdn</a> <br>
-<!--Con la <p> ponemos párrafos y con <br> hacemos salato de línea-->
+
+<!-- Un párrafo con una clase para darle estilo desde el CSS de arriba -->
 <p class="apw">La mejor página de internet</p>
-            <p> este es un párrafo</p> <br>
-            <p> este es otro párrafo</p>
-<!--Con esto metemos imagenes, se puede hacer con ruta relativa, o con un enlace.webp-->
-        <img src="https://www.novazys.com/wp-content/uploads/2023/11/Odoo-Erp-CRM.webp" alt="Logo de Odoo" width="300" height="170"> <br>
-<!--Ponemos el tamaño del video, y con source metemos el video-->      
-        <video width="320" height="240" controls>
-<!--en src=... ponemosla ruta relativa del video y en type= el nombre/extension-->           
-  <source src="videoshtml/señorbestia.mp4" type="video/mp4">
-  <!--en src=... ponemosla ruta relativa del video y en type= el nombre/extension-->  
-  <audio controls>
-    <source src="audios/señorbestia.mp3" type="audio/mp3">
-</audio>
+
+<!-- Dos párrafos normales para ir probando -->
+<p> este es un párrafo</p> <br>
+<p> este es otro párrafo</p>
+
+<!-- Imagen insertada desde una URL externa, con tamaño fijo -->
+<img src="https://www.novazys.com/wp-content/uploads/2023/11/Odoo-Erp-CRM.webp" alt="Logo de Odoo" width="300" height="170"> <br>
+
+<!-- Video insertado desde una ruta relativa dentro del proyecto -->
+<video width="320" height="240" controls>
+
+    <!-- Aquí va el archivo mp4 del vídeo -->
+    <source src="videoshtml/señorbestia.mp4" type="video/mp4">
+
+    <!-- Reproductor de audio dentro del mismo bloque (no es habitual, pero funciona) -->
+    <audio controls>
+      <source src="audios/señorbestia.mp3" type="audio/mp3">
+    </audio>
+
 </video>
 
-<!--Tablas-->
+<!-- Estilos para las tablas, para que tengan borde y estén centradas -->
 <style>
 table, th, td {
   border:2px solid rgb(166, 133, 255);
@@ -117,98 +129,107 @@ table, th, td {
 }
 </style>
 
+<!-- Encabezado del horario -->
 <h2>Horario | 2º SMR</h2>
+
+<!-- Título que aparece encima de la tabla -->
 <caption>Horario de clases del 2º curso de SMR</caption>
+
+<!-- Tabla completa con filas y celdas de colores según la asignatura -->
 <table style="width: 580px;height: 150px;">
   <tr style="width: auto; color: rgb(88, 0, 0);">
-            <th> Horas </th>
-            <th> Lunes </th>
-            <th> Martes </th>
-            <th> Miercoles </th>
-            <th> Jueves </th>
-            <th> Viernes </th>
-        </tr>
+    <th> Horas </th>
+    <th> Lunes </th>
+    <th> Martes </th>
+    <th> Miercoles </th>
+    <th> Jueves </th>
+    <th> Viernes </th>
+  </tr>
         
-      <tr>
-        <td class="horas"> 8:30 - 9:25 </td>
-        <td class="sasp"> SASP </td>
-        <td class="opt"> OPT </td>
-        <td class="sor"> SOR </td>
-        <td class="ser"> SER </td>
-        <td rowspan="2"; class="mme"> MME </td>
-        </tr>
+  <tr>
+    <td class="horas"> 8:30 - 9:25 </td>
+    <td class="sasp"> SASP </td>
+    <td class="opt"> OPT </td>
+    <td class="sor"> SOR </td>
+    <td class="ser"> SER </td>
+    <td rowspan="2" class="mme"> MME </td>
+  </tr>
         
-        <tr>    
-        <td class="horas"> 9:25 - 10:20 </td>
-        <td class="sor"> SOR</td>
-        <td class="apw"> APW </td>
-        <td class="ser"> SER </td>
-        <td class="dasp"> DASP </td>
+  <tr>    
+    <td class="horas"> 9:25 - 10:20 </td>
+    <td class="sor"> SOR</td>
+    <td class="apw"> APW </td>
+    <td class="ser"> SER </td>
+    <td class="dasp"> DASP </td>
+  </tr>
 
-        </tr>
+  <tr>
+    <td class="horas"> 10:20 - 10:40 </td>
+    <!-- Recreo ocupa toda la fila -->
+    <td colspan="5" class="recreo"> RECREO </td>
+  </tr>
 
-    <tr>
-        <td class="horas"> 10:20 - 10:40 </td>
-        <td colspan="5"; class="recreo"> RECREO </td>
-          </tr>
+  <tr>
+    <td class="horas"> 10:40 - 11:35 </td>
+    <td class="sor"> SOR</td>
+    <td class="apw"> APW </td>
+    <td class="ser"> SER </td>
+    <td class="ipeii"> IPEII </td>
+    <td class="ser"> SER </td>
+  </tr>
 
-        <tr>
-        <td class="horas"> 10:40 - 11:35 </td>
-        <td class="sor"> SOR</td>
-        <td class="apw"> APW </td>
-        <td class="ser"> SER </td>
-        <td class="ipeii"> IPEII </td>
-        <td class="ser"> SER </td>
-          </tr>
-        <tr>
-        <td class="horas"> 11:35 - 12:30 </td>
-        <td class="ser"> SER </td> 
-        <td class="mme"> MME </td>
-        <td class="ipeii"> IPEII </td>
-        <td class="opt"> OPT </td>
-        <td class="sor"> SOR </td>
-          </tr>
+  <tr>
+    <td class="horas"> 11:35 - 12:30 </td>
+    <td class="ser"> SER </td> 
+    <td class="mme"> MME </td>
+    <td class="ipeii"> IPEII </td>
+    <td class="opt"> OPT </td>
+    <td class="sor"> SOR </td>
+  </tr>
 
-          <tr>
-        <td class="horas"> 12:30 - 12:40 </td>
-        <td colspan="5"; class="recreo"> RECREO </td>
-          </tr>
+  <tr>
+    <td class="horas"> 12:30 - 12:40 </td>
+    <td colspan="5" class="recreo"> RECREO </td>
+  </tr>
 
-        <tr>
-        <td class="horas"> 12:40 - 13:35 </td>
-        <td class="ser"> SER</td>
-        <td class="mme"> MME </td>
-        <td rowspan="2"; class="mme"> MME </td>
-        <td class="apw"> APW </td>
-        <td class="opt"> OPT </td>
-        </tr>
-        <tr>
-        <td class="horas">  13:35 - 14:30 </td>
-        <td class="ipeii"> IPEII</td>
-        <td class="sor"> SOR </td>
+  <tr>
+    <td class="horas"> 12:40 - 13:35 </td>
+    <td class="ser"> SER</td>
+    <td class="mme"> MME </td>
+    <td rowspan="2" class="mme"> MME </td>
+    <td class="apw"> APW </td>
+    <td class="opt"> OPT </td>
+  </tr>
 
-        <td class="pi"> PI </td>
-        <td class="apw"> APW </td>
-        </tr>
+  <tr>
+    <td class="horas">  13:35 - 14:30 </td>
+    <td class="ipeii"> IPEII</td>
+    <td class="sor"> SOR </td>
+    <td class="pi"> PI </td>
+    <td class="apw"> APW </td>
+  </tr>
 </table>
 
-<!--Listas-->
+<!-- Lista ordenada (1, 2, 3...) -->
 <ol>
   <li>Marcos</li>
   <li>Pedro</li>
   <li>Flores</li>
-<li>JC</li>
+  <li>JC</li>
 </ol>
 
+<!-- Lista sin orden (viñetas) -->
 <ul>
   <li>Pedro</li>
   <li>Marcos</li>
   <li>JC</li>
   <li>Flores</li>
 </ul> 
-<!--  -->
 
-<p style="font-size: 26px; color: rgb(209, 19, 19);font: arial;">Es un lenguaje de estilos que define la apariencia de los documentos HTML, como el color, la fuente, el tamaño, la posición y el diseño de una página web</p>
+<!-- Explicación de CSS en un párrafo con estilo propio -->
+<p style="font-size: 26px; color: rgb(209, 19, 19);font: arial;">
+  Es un lenguaje de estilos que define la apariencia de los documentos HTML, como el color, la fuente, el tamaño, la posición y el diseño de una página web
+</p>
 
 </body>
 </html>

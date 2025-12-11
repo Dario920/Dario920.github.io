@@ -1,7 +1,9 @@
+/* Estilo general del cuerpo de la página */
 body {
     background-color: rgb(153, 147, 147);
 }
 
+/* Títulos principales */
 h1 {
     font-family: 'Courier New', Courier, monospace;
     color: white;
@@ -11,13 +13,16 @@ h1 {
     margin-bottom: 20px;
     padding: 10px;
 }
+
+/* Enlaces dentro de párrafos */
 p a {
     font-family: Arial, sans-serif;
     font-size: 14px;
     color: black;
 }
+
+/* Estilo de imágenes */
 img {
-    color: rgb(85, 85, 85);
     height: 250px;
     width: auto;
     padding: 10px;
@@ -25,41 +30,49 @@ img {
     border: 2px solid black;
     border-radius: 5px;
 }
+
+/* Estilo de enlaces de audio */
 audio a {
     color: rgb(0, 0, 0);
     margin-left: 3px;
-    text-decoration: none;}
+    text-decoration: none;
+}
 
+/* Líneas horizontales */
 hr {
     border: 1px solid black;
     margin-top: auto;
     margin-bottom: 20px;
 }
 
+/* Videos */
 video {
     margin: 20px auto;
     border: 3px solid black;
     border-radius: 10px;
 }
 
+/* Botones estilo enlace */
 .btn-link {
-display: inline-block;
-padding: 12px 24px;
-background: linear-gradient(145deg, #747474, #292d6b);
-color: #fff;
-font-weight: 700;
-text-decoration: none;
-border-radius: 12px;
-text-align: center;
-transition: transform 0.1s ease, box-shadow 0.1s ease;
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(145deg, #747474, #292d6b);
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
 
+/* Efecto cuando se pasa el ratón */
 .btn-link:hover {
-transform: translateY(-2px);
-box-shadow: 0 6px 18px rgba(140, 110, 255, 0.6);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(140, 110, 255, 0.6);
 }
 
+/* Efecto cuando se hace click */
 .btn-link:active {
-transform: translateY(1px);
-box-shadow: 0 3px 9px rgba(140, 110, 255, 0.7);
+    transform: translateY(1px);
+    box-shadow: 0 3px 9px rgba(140, 110, 255, 0.7);
 }

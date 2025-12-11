@@ -1,68 +1,73 @@
 html, body {
-    height: 100%;
+    height: 100%;  /* Para que ocupe toda la pantalla */
     margin: 0;
     padding: 0;
 }
 
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-color: #ffffff;
-    font-family: Arial, sans-serif;
+    min-height: 100vh;  /* Que siempre ocupe al menos toda la ventana */
+    display: flex;       /* Para poder usar flex-direction */
+    flex-direction: column; 
+    background-color: #ffffff;  /* Fondo blanco */
+    font-family: Arial, sans-serif;  /* Fuente general */
 }
 
+/* Cabecera */
 header {
-    background: linear-gradient(to right, #50caf6, #c8f0ff, #50caf6);
+    background: linear-gradient(to right, #50caf6, #c8f0ff, #50caf6); /* Degradado bonito */
     border: #4e4e4e solid 2px;
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 15px 0;
 }
 
+header h1 {
+    margin: 0;       /* Eliminar margen por defecto */
+    font-size: 28px; /* Tamaño del título */
+}
+
+/* Barra lateral */
 aside {
-    width: 200px;
-    height: 160vh;
+    width: 200px;          /* Ancho fijo */
+    height: 160vh;         /* Altura un poco más que la ventana para scroll */
     background-color: #51b4ff;
     padding: 15px;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Incluye padding dentro del ancho */
 }
 
-header h1 {
-    margin: 0;
-    font-size: 28px;
-}
-
+/* Menú de navegación */
 nav ul {
     margin: 0;
     padding: 0;
     background-color: #2e8db0;
     overflow: hidden;
-    list-style-type: none;
+    list-style-type: none; /* Quitar los bullets */
 }
 
 nav ul li {
-    float: left;
+    float: left; /* Coloca los elementos en línea horizontal */
 }
 
 nav ul li a {
-    display: flex;
+    display: flex; /* Para centrar contenido */
     color: white;
     text-align: center;
     padding: 14px 20px;
     align-items: center;
     justify-content: center;
     float: center;
-    text-decoration: none;
+    text-decoration: none; /* Quitar subrayado */
 }
 
+/* Efecto hover para enlaces y elementos con clase sombra */
 a:hover, .sombra:hover {
-    transform: scale(1.1);
-    background-color: #005b7f;
+    transform: scale(1.1);           /* Agrandar un poquito al pasar el ratón */
+    background-color: #005b7f;       /* Fondo más oscuro */
 }
 
+/* Contenido principal */
 main {
-    flex: 1;
+    flex: 1;           /* Ocupa el espacio restante */
     padding: 20px;
     text-align: left;
 }
@@ -71,6 +76,7 @@ section {
     padding: 20px;
 }
 
+/* Listas de tareas */
 .task-lists {
     list-style: none;
     padding: 0;
@@ -80,9 +86,10 @@ section {
 .task-list-item {
     padding: 10px;
     margin-bottom: 10px;
-    background-color: #f0f0f0;
+    background-color: #f0f0f0; /* Fondo gris suave */
 }
 
+/* Pie de página */
 footer {
     background-color: #d1d1d1;
     color: rgb(0, 0, 0);
@@ -93,5 +100,5 @@ footer {
 }
 
 footer p {
-    margin: 0;
+    margin: 0; /* Quitar margen por defecto */
 }

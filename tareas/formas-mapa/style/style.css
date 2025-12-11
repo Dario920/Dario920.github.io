@@ -1,17 +1,22 @@
-body {
+/* Eliminar márgenes y padding por defecto del documento entero ante de aplicar los otros */
+* {
     margin: 0;
     padding: 0;
 }
+
+/* Estilo para la imagen del mapa */
 .tamaño-mapa {
-    height: auto;
+    height: auto;      
     width: auto;
-    margin: auto;
-    padding-top: 0;
+    margin: auto;      
+    padding-top: 0;    
 }
+
+/* Estilo para la cabecera */
 h1 {
-    text-align: center;
+    text-align: center;              
     font-family: Arial, sans-serif;
-    color: #000000;
-    background-color: grey;
-    padding: 10px;
+    color: #000000;                  
+    background-color: grey;          
+    padding: 10px;                   
 }
