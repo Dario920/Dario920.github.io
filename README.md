@@ -36,24 +36,6 @@ Aunque mi formación principal es en sistemas, me estoy especializando en las he
 
 ---
 
-## 📈 Mi Actividad en GitHub
-
-Aquí puedes ver mi ritmo de trabajo y contribuciones a lo largo del último año:
-
-## 📈 Mi Actividad en GitHub
-
-Para un vistazo rápido a mi dedicación y las tecnologías principales que utilizo en mis repositorios:
-
-<div align="center">
-    
-| Marca Personal | Foco Principal |
-| :---------------------- | :-------------------- |
-| [![Logo de Darío](https://raw.githubusercontent.com/Dario920/Dario920.github.io/main/img/logo-sin-fondo-2.png)](https://dario920.github.io/) | [![Etiqueta HTML](https://raw.githubusercontent.com/Dario920/Dario920.github.io/main/img/logo-sin-fondo-2.png)](https://dario920.github.io/) |
-
-</div>
-
----
-
 ## 📧 Contacto
 
 Siempre estoy abierto a conectar y discutir proyectos o tecnologías y sobretodo abierto a consejos.
