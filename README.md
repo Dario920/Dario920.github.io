@@ -40,11 +40,15 @@ Aunque mi formación principal es en sistemas, me estoy especializando en las he
 
 Aquí puedes ver mi ritmo de trabajo y contribuciones a lo largo del último año:
 
+## 📈 Mi Actividad en GitHub
+
+Para un vistazo rápido a mi dedicación y las tecnologías principales que utilizo en mis repositorios:
+
 <div align="center">
     
-| Estadísticas Generales | Lenguajes Principales |
+| Marca Personal | Foco Principal |
 | :---------------------- | :-------------------- |
-| [![Darío's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Dario920&show_icons=true&theme=vue&hide_border=true)](https://github.com/Dario920) | [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Dario920&layout=compact&theme=vue&hide_border=true)](https://github.com/Dario920) |
+| [![Logo de Darío](https://raw.githubusercontent.com/Dario920/Dario920.github.io/main/img/logo-sin-fondo-2.png)](https://dario920.github.io/) | [![Etiqueta HTML](https://raw.githubusercontent.com/Dario920/Dario920.github.io/main/img/logo-sin-fondo-2.png)](https://dario920.github.io/) |
 
 </div>
 
