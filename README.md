@@ -41,10 +41,10 @@ Aunque mi formación principal es en sistemas, me estoy especializando en las he
 Aquí puedes ver mi ritmo de trabajo y contribuciones a lo largo del último año:
 
 <div align="center">
-
-[![Darío's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Dario920&show_icons=true&theme=vue&hide_border=true)](https://github.com/Dario920)
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Dario920&layout=compact&theme=vue&hide_border=true)](https://github.com/Dario920)
+    
+| Estadísticas Generales | Lenguajes Principales |
+| :---------------------- | :-------------------- |
+| [![Darío's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Dario920&show_icons=true&theme=vue&hide_border=true)](https://github.com/Dario920) | [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Dario920&layout=compact&theme=vue&hide_border=true)](https://github.com/Dario920) |
 
 </div>
 
@@ -62,6 +62,6 @@ Siempre estoy abierto a conectar y discutir proyectos o tecnologías y sobretodo
 
 <div align="center">
 
-*Progresando poco a poco* 🚀
+*Progresando poco a poco*
 
 </div>
